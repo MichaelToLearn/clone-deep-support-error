@@ -8,6 +8,7 @@
   "bugs": {
     "url": "https://github.com/jonschlinkert/clone-deep/issues"
   },
+  "types": "./index.d.ts",
   "type": "module",
   "license": "MIT",
   "files": [
