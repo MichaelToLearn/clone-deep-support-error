@@ -1,3 +1,4 @@
+> foked from [clone-deep](https://github.com/jonschlinkert/clone-deep)
 # clone-deep [![NPM version](https://img.shields.io/npm/v/clone-deep.svg?style=flat)](https://www.npmjs.com/package/clone-deep) [![NPM monthly downloads](https://img.shields.io/npm/dm/clone-deep.svg?style=flat)](https://npmjs.org/package/clone-deep) [![NPM total downloads](https://img.shields.io/npm/dt/clone-deep.svg?style=flat)](https://npmjs.org/package/clone-deep) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/clone-deep.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/clone-deep)
 
 > Recursively (deep) clone JavaScript native types, like Object, Array, RegExp, Date as well as primitives.

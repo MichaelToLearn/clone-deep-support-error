@@ -1,10 +1,20 @@
 'use strict';
 
-require('mocha');
-const assert = require('assert');
-const clone = require('./');
+// import mocha from 'mocha';
+import assert from 'assert';
+import clone from './index.js';
 
 describe('cloneDeep()', function() {
+  it('should clone an error', function() {
+    const err = new Error('foo');
+    const cloned = clone(err);
+    assert.equal(cloned.message, err.message);
+    assert.equal(cloned.name, err.name);
+    assert.equal(cloned.stack, err.stack);
+    
+    assert.equal(String(cloned), String(err));
+  })
+
   it('should clone arrays', function() {
     assert.deepEqual(clone(['alpha', 'beta', 'gamma']), ['alpha', 'beta', 'gamma']);
     assert.deepEqual(clone([1, 2, 3]), [1, 2, 3]);
