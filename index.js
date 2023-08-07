@@ -60,6 +60,8 @@ function cloneDeep(val, instanceClone) {
       return cloneObjectDeep(val, instanceClone);
     case "array":
       return cloneArrayDeep(val, instanceClone);
+    case "function":
+      return undefined;
     default: {
       if (val instanceof Error || maybeTypeofError(val)) {
         return cloneError(val);
