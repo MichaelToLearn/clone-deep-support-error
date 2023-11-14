@@ -4,9 +4,9 @@
  * Module dependenices
  */
 
-import clone from "shallow-clone";
-import typeOf from "kind-of";
-import isPlainObject from "is-plain-object";
+const clone = require("shallow-clone");
+const typeOf = require("kind-of");
+const isPlainObject = require("is-plain-object");
 
 function maybeTypeofError(obj) {
   try {
@@ -97,4 +97,4 @@ function cloneArrayDeep(val, instanceClone) {
  * Expose `cloneDeep`
  */
 
-export default cloneDeep;
+module.exports = cloneDeep;
